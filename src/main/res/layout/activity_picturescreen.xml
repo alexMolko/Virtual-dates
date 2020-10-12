@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F3F6"
+    tools:context=".picturescreen"
+    >
+    <include
+        android:id="@+id/include"
+        layout="@layout/appbar"
+        android:background="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="352dp"
+        android:layout_height="91dp"
+        android:gravity="center"
+        android:text="Let us see how you look"
+        android:textColor="#5947a6"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.144" />
+    <RelativeLayout
+        android:layout_width="370dp"
+        android:layout_height="526dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/include"
+        app:layout_constraintVertical_bias="0.76">
+
+        <LinearLayout
+            android:id="@+id/nameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="285dp"
+            android:layout_marginTop="80dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageView2"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerInParent="true"
+                android:onClick="takePic"
+                android:src="@drawable/camera"
+                app:civ_border_color="#fde4f1"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="takePic"
+                android:paddingTop="20dp"
+                android:text="Tap to add a picture"
+                android:textColor="#5947a6"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buttonNext"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_below="@+id/nameLayout"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="85dp"
+            android:layout_marginBottom="-72dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="59dp"
+                android:layout_below="@+id/locationLayout"
+                android:layout_gravity="start"
+                android:onClick="interestScreen2"
+                android:text="Next"
+                android:fontFamily="sans-serif-black"
+                app:cornerRadius="24dp"
+                android:textSize="20sp"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:backgroundTint="@color/colorPrimary"
+        app:liftOnScroll="true"
+        tools:ignore="MissingConstraints">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/createtoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:textColor="#FFFF"
+                android:textSize="18sp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="right"
+                >
+
+            </TextView>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

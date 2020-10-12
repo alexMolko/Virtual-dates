@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.vdates">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".results"></activity>
+        <activity android:name=".Homescreen_task4" />
+        <activity android:name=".virtualscenario_home2" />
+        <activity android:name=".matchResponse" />
+        <activity android:name=".waitingResponse" />
+        <activity android:name=".firstResponse" />
+        <activity android:name=".concertScenario" />
+        <activity android:name=".VirtualscenarioHome" />
+        <activity android:name=".Homescreen_taks3_start" />
+        <activity android:name=".Homescreen_task3" />
+        <activity android:name=".confirmation_message" />
+        <activity android:name=".agreed_datetime" />
+        <activity android:name=".timeavailability" />
+        <activity android:name=".scenarioselection" />
+        <activity android:name=".listmatches_screen" />
+        <activity android:name=".Homescreen_task2" />
+        <activity android:name=".datereques" />
+        <activity android:name=".tagsscreen" />
+        <activity android:name=".interestscreen" />
+        <activity android:name=".picturescreen" />
+        <activity android:name=".personal_information" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

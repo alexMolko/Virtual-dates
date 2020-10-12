@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Vdates</string>
+    <string name="get_started">Get started</string>
+    <string name="don_t_wait_too_much_to_find_your_love">Don\'t wait too much to find your love!</string>
+    <string name="tell_us_about_you">Tell us about you!</string>
+    <string name="your_name_is">Your name is:</string>
+    <string name="your_age_is">Your age is:</string>
+    <string name="when_is_your_birthday">When is your birthday?</string>
+    <string name="birthday">birthday</string>
+    <string name="you_identify_as">You identify as:</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="your_location_is">Your location is:</string>
+    <string name="barcelona_spain">Barcelona, Spain</string>
+    <string name="choose_a_picture">Choose a picture</string>
+    <string name="tell_us_about_your_preferences_habits_and_hobbies_and_we_will_match_you">Tell us about your preferences, habits and hobbies and we will match you</string>
+</resources>
